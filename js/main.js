@@ -122,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
       item.className = 'masonry-item';
       item.dataset.index = i;
       const img = document.createElement('img');
-      img.src = filteredImages[i].src;
       img.alt = 'Yankeeverse — ' + filteredImages[i].categoryLabel;
       img.loading = 'lazy';
       img.onload = () => item.classList.add('visible');
@@ -132,6 +131,12 @@ document.addEventListener('DOMContentLoaded', () => {
       item.appendChild(img); item.appendChild(overlay);
       item.addEventListener('click', () => openLightbox(i));
       grid.appendChild(item);
+      // Set src AFTER appending to DOM so onload fires when element is live
+      img.src = filteredImages[i].src;
+      // Fallback: if image was cached and onload already fired
+      if (img.complete) {
+        requestAnimationFrame(() => item.classList.add('visible'));
+      }
     }
     displayedCount = end;
     updateLoadMore();
