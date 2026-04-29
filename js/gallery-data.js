@@ -1,0 +1,420 @@
+const galleryCategories = [
+  {
+    "id": "01-latest-visual-art",
+    "label": "Latest Visual Art",
+    "images": [
+      "assets/images/gallery/01-latest-visual-art/art_001.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_002.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_003.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_004.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_005.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_006.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_007.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_008.jpg",
+      "assets/images/gallery/01-latest-visual-art/art_009.jpg"
+    ]
+  },
+  {
+    "id": "02-collage-and-surreal",
+    "label": "Collage And Surreal",
+    "images": [
+      "assets/images/gallery/02-collage-and-surreal/art_001.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_002.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_003.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_004.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_005.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_006.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_007.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_008.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_009.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_010.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_011.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_012.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_013.jpg",
+      "assets/images/gallery/02-collage-and-surreal/art_014.jpg"
+    ]
+  },
+  {
+    "id": "03-music-cover-art",
+    "label": "Music Cover Art",
+    "images": [
+      "assets/images/gallery/03-music-cover-art/art_001.jpg",
+      "assets/images/gallery/03-music-cover-art/art_002.jpg",
+      "assets/images/gallery/03-music-cover-art/art_003.jpg",
+      "assets/images/gallery/03-music-cover-art/art_004.jpg",
+      "assets/images/gallery/03-music-cover-art/art_005.jpg",
+      "assets/images/gallery/03-music-cover-art/art_006.jpg",
+      "assets/images/gallery/03-music-cover-art/art_007.jpg",
+      "assets/images/gallery/03-music-cover-art/art_008.jpg",
+      "assets/images/gallery/03-music-cover-art/art_009.jpg",
+      "assets/images/gallery/03-music-cover-art/art_010.jpg",
+      "assets/images/gallery/03-music-cover-art/art_011.jpg",
+      "assets/images/gallery/03-music-cover-art/art_012.jpg",
+      "assets/images/gallery/03-music-cover-art/art_013.jpg",
+      "assets/images/gallery/03-music-cover-art/art_014.jpg",
+      "assets/images/gallery/03-music-cover-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "04-brand-mockups",
+    "label": "Brand Mockups",
+    "images": [
+      "assets/images/gallery/04-brand-mockups/art_001.jpg",
+      "assets/images/gallery/04-brand-mockups/art_002.jpg",
+      "assets/images/gallery/04-brand-mockups/art_003.jpg",
+      "assets/images/gallery/04-brand-mockups/art_004.jpg",
+      "assets/images/gallery/04-brand-mockups/art_005.jpg",
+      "assets/images/gallery/04-brand-mockups/art_006.jpg",
+      "assets/images/gallery/04-brand-mockups/art_007.jpg",
+      "assets/images/gallery/04-brand-mockups/art_008.jpg",
+      "assets/images/gallery/04-brand-mockups/art_009.jpg",
+      "assets/images/gallery/04-brand-mockups/art_010.jpg",
+      "assets/images/gallery/04-brand-mockups/art_011.jpg",
+      "assets/images/gallery/04-brand-mockups/art_012.jpg",
+      "assets/images/gallery/04-brand-mockups/art_013.jpg",
+      "assets/images/gallery/04-brand-mockups/art_014.jpg",
+      "assets/images/gallery/04-brand-mockups/art_015.jpg"
+    ]
+  },
+  {
+    "id": "05-typography-and-posters",
+    "label": "Typography And Posters",
+    "images": [
+      "assets/images/gallery/05-typography-and-posters/art_001.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_002.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_003.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_004.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_005.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_006.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_007.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_008.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_009.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_010.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_011.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_012.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_013.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_014.jpg",
+      "assets/images/gallery/05-typography-and-posters/art_015.jpg"
+    ]
+  },
+  {
+    "id": "06-merchandise-design",
+    "label": "Merchandise Design",
+    "images": [
+      "assets/images/gallery/06-merchandise-design/art_001.jpg",
+      "assets/images/gallery/06-merchandise-design/art_002.jpg",
+      "assets/images/gallery/06-merchandise-design/art_003.jpg",
+      "assets/images/gallery/06-merchandise-design/art_004.jpg",
+      "assets/images/gallery/06-merchandise-design/art_005.jpg",
+      "assets/images/gallery/06-merchandise-design/art_006.jpg",
+      "assets/images/gallery/06-merchandise-design/art_007.jpg",
+      "assets/images/gallery/06-merchandise-design/art_008.jpg",
+      "assets/images/gallery/06-merchandise-design/art_009.jpg",
+      "assets/images/gallery/06-merchandise-design/art_010.jpg",
+      "assets/images/gallery/06-merchandise-design/art_011.jpg",
+      "assets/images/gallery/06-merchandise-design/art_012.jpg",
+      "assets/images/gallery/06-merchandise-design/art_013.jpg",
+      "assets/images/gallery/06-merchandise-design/art_014.jpg",
+      "assets/images/gallery/06-merchandise-design/art_015.jpg"
+    ]
+  },
+  {
+    "id": "07-digital-illustrations",
+    "label": "Digital Illustrations",
+    "images": [
+      "assets/images/gallery/07-digital-illustrations/art_001.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_002.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_003.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_004.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_005.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_006.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_007.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_008.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_009.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_010.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_011.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_012.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_013.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_014.jpg",
+      "assets/images/gallery/07-digital-illustrations/art_015.jpg"
+    ]
+  },
+  {
+    "id": "08-hip-hop-covers",
+    "label": "Hip Hop Covers",
+    "images": [
+      "assets/images/gallery/08-hip-hop-covers/art_001.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_002.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_003.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_004.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_005.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_006.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_007.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_008.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_009.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_010.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_011.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_012.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_013.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_014.jpg",
+      "assets/images/gallery/08-hip-hop-covers/art_015.jpg"
+    ]
+  },
+  {
+    "id": "09-creative-composites",
+    "label": "Creative Composites",
+    "images": [
+      "assets/images/gallery/09-creative-composites/art_001.jpg",
+      "assets/images/gallery/09-creative-composites/art_002.jpg",
+      "assets/images/gallery/09-creative-composites/art_003.jpg",
+      "assets/images/gallery/09-creative-composites/art_004.jpg",
+      "assets/images/gallery/09-creative-composites/art_005.jpg",
+      "assets/images/gallery/09-creative-composites/art_006.jpg",
+      "assets/images/gallery/09-creative-composites/art_007.jpg",
+      "assets/images/gallery/09-creative-composites/art_008.jpg",
+      "assets/images/gallery/09-creative-composites/art_009.jpg",
+      "assets/images/gallery/09-creative-composites/art_010.jpg",
+      "assets/images/gallery/09-creative-composites/art_011.jpg",
+      "assets/images/gallery/09-creative-composites/art_012.jpg",
+      "assets/images/gallery/09-creative-composites/art_013.jpg",
+      "assets/images/gallery/09-creative-composites/art_014.jpg",
+      "assets/images/gallery/09-creative-composites/art_015.jpg"
+    ]
+  },
+  {
+    "id": "10-brand-identity",
+    "label": "Brand Identity",
+    "images": [
+      "assets/images/gallery/10-brand-identity/art_001.jpg",
+      "assets/images/gallery/10-brand-identity/art_002.jpg",
+      "assets/images/gallery/10-brand-identity/art_003.jpg",
+      "assets/images/gallery/10-brand-identity/art_004.jpg",
+      "assets/images/gallery/10-brand-identity/art_005.jpg",
+      "assets/images/gallery/10-brand-identity/art_006.jpg",
+      "assets/images/gallery/10-brand-identity/art_007.jpg",
+      "assets/images/gallery/10-brand-identity/art_008.jpg",
+      "assets/images/gallery/10-brand-identity/art_009.jpg",
+      "assets/images/gallery/10-brand-identity/art_010.jpg",
+      "assets/images/gallery/10-brand-identity/art_011.jpg",
+      "assets/images/gallery/10-brand-identity/art_012.jpg",
+      "assets/images/gallery/10-brand-identity/art_013.jpg",
+      "assets/images/gallery/10-brand-identity/art_014.jpg",
+      "assets/images/gallery/10-brand-identity/art_015.jpg"
+    ]
+  },
+  {
+    "id": "11-album-artwork",
+    "label": "Album Artwork",
+    "images": [
+      "assets/images/gallery/11-album-artwork/art_001.jpg",
+      "assets/images/gallery/11-album-artwork/art_002.jpg",
+      "assets/images/gallery/11-album-artwork/art_003.jpg",
+      "assets/images/gallery/11-album-artwork/art_004.jpg",
+      "assets/images/gallery/11-album-artwork/art_005.jpg",
+      "assets/images/gallery/11-album-artwork/art_006.jpg",
+      "assets/images/gallery/11-album-artwork/art_007.jpg",
+      "assets/images/gallery/11-album-artwork/art_008.jpg",
+      "assets/images/gallery/11-album-artwork/art_009.jpg",
+      "assets/images/gallery/11-album-artwork/art_010.jpg",
+      "assets/images/gallery/11-album-artwork/art_011.jpg",
+      "assets/images/gallery/11-album-artwork/art_012.jpg",
+      "assets/images/gallery/11-album-artwork/art_013.jpg",
+      "assets/images/gallery/11-album-artwork/art_014.jpg",
+      "assets/images/gallery/11-album-artwork/art_015.jpg"
+    ]
+  },
+  {
+    "id": "12-concept-art",
+    "label": "Concept Art",
+    "images": [
+      "assets/images/gallery/12-concept-art/art_001.jpg",
+      "assets/images/gallery/12-concept-art/art_002.jpg",
+      "assets/images/gallery/12-concept-art/art_003.jpg",
+      "assets/images/gallery/12-concept-art/art_004.jpg",
+      "assets/images/gallery/12-concept-art/art_005.jpg",
+      "assets/images/gallery/12-concept-art/art_006.jpg",
+      "assets/images/gallery/12-concept-art/art_007.jpg",
+      "assets/images/gallery/12-concept-art/art_008.jpg",
+      "assets/images/gallery/12-concept-art/art_009.jpg",
+      "assets/images/gallery/12-concept-art/art_010.jpg",
+      "assets/images/gallery/12-concept-art/art_011.jpg",
+      "assets/images/gallery/12-concept-art/art_012.jpg",
+      "assets/images/gallery/12-concept-art/art_013.jpg",
+      "assets/images/gallery/12-concept-art/art_014.jpg",
+      "assets/images/gallery/12-concept-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "13-cultural-art",
+    "label": "Cultural Art",
+    "images": [
+      "assets/images/gallery/13-cultural-art/art_001.jpg",
+      "assets/images/gallery/13-cultural-art/art_002.jpg",
+      "assets/images/gallery/13-cultural-art/art_003.jpg",
+      "assets/images/gallery/13-cultural-art/art_004.jpg",
+      "assets/images/gallery/13-cultural-art/art_005.jpg",
+      "assets/images/gallery/13-cultural-art/art_006.jpg",
+      "assets/images/gallery/13-cultural-art/art_007.jpg",
+      "assets/images/gallery/13-cultural-art/art_008.jpg",
+      "assets/images/gallery/13-cultural-art/art_009.jpg",
+      "assets/images/gallery/13-cultural-art/art_010.jpg",
+      "assets/images/gallery/13-cultural-art/art_011.jpg",
+      "assets/images/gallery/13-cultural-art/art_012.jpg",
+      "assets/images/gallery/13-cultural-art/art_013.jpg",
+      "assets/images/gallery/13-cultural-art/art_014.jpg",
+      "assets/images/gallery/13-cultural-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "14-poster-design",
+    "label": "Poster Design",
+    "images": [
+      "assets/images/gallery/14-poster-design/art_001.jpg",
+      "assets/images/gallery/14-poster-design/art_002.jpg",
+      "assets/images/gallery/14-poster-design/art_003.jpg",
+      "assets/images/gallery/14-poster-design/art_004.jpg",
+      "assets/images/gallery/14-poster-design/art_005.jpg",
+      "assets/images/gallery/14-poster-design/art_006.jpg",
+      "assets/images/gallery/14-poster-design/art_007.jpg",
+      "assets/images/gallery/14-poster-design/art_008.jpg",
+      "assets/images/gallery/14-poster-design/art_009.jpg",
+      "assets/images/gallery/14-poster-design/art_010.jpg",
+      "assets/images/gallery/14-poster-design/art_011.jpg",
+      "assets/images/gallery/14-poster-design/art_012.jpg",
+      "assets/images/gallery/14-poster-design/art_013.jpg",
+      "assets/images/gallery/14-poster-design/art_014.jpg",
+      "assets/images/gallery/14-poster-design/art_015.jpg"
+    ]
+  },
+  {
+    "id": "15-visual-collage",
+    "label": "Visual Collage",
+    "images": [
+      "assets/images/gallery/15-visual-collage/art_001.jpg",
+      "assets/images/gallery/15-visual-collage/art_002.jpg",
+      "assets/images/gallery/15-visual-collage/art_003.jpg",
+      "assets/images/gallery/15-visual-collage/art_004.jpg",
+      "assets/images/gallery/15-visual-collage/art_005.jpg",
+      "assets/images/gallery/15-visual-collage/art_006.jpg",
+      "assets/images/gallery/15-visual-collage/art_007.jpg",
+      "assets/images/gallery/15-visual-collage/art_008.jpg",
+      "assets/images/gallery/15-visual-collage/art_009.jpg",
+      "assets/images/gallery/15-visual-collage/art_010.jpg",
+      "assets/images/gallery/15-visual-collage/art_011.jpg",
+      "assets/images/gallery/15-visual-collage/art_012.jpg",
+      "assets/images/gallery/15-visual-collage/art_013.jpg",
+      "assets/images/gallery/15-visual-collage/art_014.jpg",
+      "assets/images/gallery/15-visual-collage/art_015.jpg"
+    ]
+  },
+  {
+    "id": "16-graphic-art",
+    "label": "Graphic Art",
+    "images": [
+      "assets/images/gallery/16-graphic-art/art_001.jpg",
+      "assets/images/gallery/16-graphic-art/art_002.jpg",
+      "assets/images/gallery/16-graphic-art/art_003.jpg",
+      "assets/images/gallery/16-graphic-art/art_004.jpg",
+      "assets/images/gallery/16-graphic-art/art_005.jpg",
+      "assets/images/gallery/16-graphic-art/art_006.jpg",
+      "assets/images/gallery/16-graphic-art/art_007.jpg",
+      "assets/images/gallery/16-graphic-art/art_008.jpg",
+      "assets/images/gallery/16-graphic-art/art_009.jpg",
+      "assets/images/gallery/16-graphic-art/art_010.jpg",
+      "assets/images/gallery/16-graphic-art/art_011.jpg",
+      "assets/images/gallery/16-graphic-art/art_012.jpg",
+      "assets/images/gallery/16-graphic-art/art_013.jpg",
+      "assets/images/gallery/16-graphic-art/art_014.jpg",
+      "assets/images/gallery/16-graphic-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "17-music-industry",
+    "label": "Music Industry",
+    "images": [
+      "assets/images/gallery/17-music-industry/art_001.jpg",
+      "assets/images/gallery/17-music-industry/art_002.jpg",
+      "assets/images/gallery/17-music-industry/art_003.jpg",
+      "assets/images/gallery/17-music-industry/art_004.jpg",
+      "assets/images/gallery/17-music-industry/art_005.jpg",
+      "assets/images/gallery/17-music-industry/art_006.jpg",
+      "assets/images/gallery/17-music-industry/art_007.jpg",
+      "assets/images/gallery/17-music-industry/art_008.jpg",
+      "assets/images/gallery/17-music-industry/art_009.jpg",
+      "assets/images/gallery/17-music-industry/art_010.jpg",
+      "assets/images/gallery/17-music-industry/art_011.jpg",
+      "assets/images/gallery/17-music-industry/art_012.jpg",
+      "assets/images/gallery/17-music-industry/art_013.jpg",
+      "assets/images/gallery/17-music-industry/art_014.jpg",
+      "assets/images/gallery/17-music-industry/art_015.jpg"
+    ]
+  },
+  {
+    "id": "18-minimalist-art",
+    "label": "Minimalist Art",
+    "images": [
+      "assets/images/gallery/18-minimalist-art/art_001.jpg",
+      "assets/images/gallery/18-minimalist-art/art_002.jpg",
+      "assets/images/gallery/18-minimalist-art/art_003.jpg",
+      "assets/images/gallery/18-minimalist-art/art_004.jpg",
+      "assets/images/gallery/18-minimalist-art/art_005.jpg",
+      "assets/images/gallery/18-minimalist-art/art_006.jpg",
+      "assets/images/gallery/18-minimalist-art/art_007.jpg",
+      "assets/images/gallery/18-minimalist-art/art_008.jpg",
+      "assets/images/gallery/18-minimalist-art/art_009.jpg",
+      "assets/images/gallery/18-minimalist-art/art_010.jpg",
+      "assets/images/gallery/18-minimalist-art/art_011.jpg",
+      "assets/images/gallery/18-minimalist-art/art_012.jpg",
+      "assets/images/gallery/18-minimalist-art/art_013.jpg",
+      "assets/images/gallery/18-minimalist-art/art_014.jpg",
+      "assets/images/gallery/18-minimalist-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "19-early-digital-art",
+    "label": "Early Digital Art",
+    "images": [
+      "assets/images/gallery/19-early-digital-art/art_001.jpg",
+      "assets/images/gallery/19-early-digital-art/art_002.jpg",
+      "assets/images/gallery/19-early-digital-art/art_003.jpg",
+      "assets/images/gallery/19-early-digital-art/art_004.jpg",
+      "assets/images/gallery/19-early-digital-art/art_005.jpg",
+      "assets/images/gallery/19-early-digital-art/art_006.jpg",
+      "assets/images/gallery/19-early-digital-art/art_007.jpg",
+      "assets/images/gallery/19-early-digital-art/art_008.jpg",
+      "assets/images/gallery/19-early-digital-art/art_009.jpg",
+      "assets/images/gallery/19-early-digital-art/art_010.jpg",
+      "assets/images/gallery/19-early-digital-art/art_011.jpg",
+      "assets/images/gallery/19-early-digital-art/art_012.jpg",
+      "assets/images/gallery/19-early-digital-art/art_013.jpg",
+      "assets/images/gallery/19-early-digital-art/art_014.jpg",
+      "assets/images/gallery/19-early-digital-art/art_015.jpg"
+    ]
+  },
+  {
+    "id": "20-foundation-works",
+    "label": "Foundation Works",
+    "images": [
+      "assets/images/gallery/20-foundation-works/art_001.jpg",
+      "assets/images/gallery/20-foundation-works/art_002.jpg",
+      "assets/images/gallery/20-foundation-works/art_003.jpg",
+      "assets/images/gallery/20-foundation-works/art_004.jpg",
+      "assets/images/gallery/20-foundation-works/art_005.jpg",
+      "assets/images/gallery/20-foundation-works/art_006.jpg",
+      "assets/images/gallery/20-foundation-works/art_007.jpg",
+      "assets/images/gallery/20-foundation-works/art_008.jpg",
+      "assets/images/gallery/20-foundation-works/art_009.jpg",
+      "assets/images/gallery/20-foundation-works/art_010.jpg",
+      "assets/images/gallery/20-foundation-works/art_011.jpg",
+      "assets/images/gallery/20-foundation-works/art_012.jpg",
+      "assets/images/gallery/20-foundation-works/art_013.jpg",
+      "assets/images/gallery/20-foundation-works/art_014.jpg",
+      "assets/images/gallery/20-foundation-works/art_015.jpg",
+      "assets/images/gallery/20-foundation-works/art_016.jpg",
+      "assets/images/gallery/20-foundation-works/art_017.jpg",
+      "assets/images/gallery/20-foundation-works/art_018.jpg",
+      "assets/images/gallery/20-foundation-works/art_019.jpg",
+      "assets/images/gallery/20-foundation-works/art_020.jpg"
+    ]
+  }
+];
